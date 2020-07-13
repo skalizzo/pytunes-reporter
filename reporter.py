@@ -254,7 +254,7 @@ class Reporter:
             extra_params = {}
 
         if self.account:
-            command = f"[p=Reporter.properties, a={self.account} {cmd_type.capitalize()}.{command}]"
+            command = f"[p=Reporter.properties, a={self.account}, {cmd_type.capitalize()}.{command}]"
         else:
             command = f"[p=Reporter.properties, {cmd_type.capitalize()}.{command}]"
 
